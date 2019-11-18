@@ -48,7 +48,7 @@ var App = {
             "nombre": "Universo 📻",
             "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://rudo.video/live/universotv?volume=0&mute=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         },
- "radio-ae": {
+        "radio-ae": {
             "nombre": "AE (DUOC) 📻",
             "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://live.grupoz.cl/3991add90400a25a1580f290246f90eb?volume=0&mute=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         },
@@ -79,46 +79,6 @@ var App = {
         "canal-33": {
             "nombre": "Canal 33 (Temuco)📺",
             "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://streaminghd.cl/player.video/index.php?s=eduardo555/eduardo555' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
-        },
-        "tn": {
-            "nombre": "Todonoticias 🌍",
-            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UCj6PcyLvpnIRT_2W_mwa9Aw&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
-        },
-        "dw": {
-            "nombre": "DW Español 🌍",
-            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UCT4Jg8h03dD0iN3Pb5L0PMA&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
-        },
-        "cronica-tv": {
-            "nombre": "Crónica TV 🌍",
-            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UCT7KFGv6s2a-rh2Jq8ZdM1g&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
-        },
-         "RT-español": {
-            "nombre": "RT Español 🌍",
-            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/mOcEqTR1Hn4?autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
-        },
-         "Global-news": {
-            "nombre": "Global News 🌍",
-            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UChLtXXpo4Ge1ReTEboVvTDg&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
-        },
-        "RT-News": {
-            "nombre": "RT News 🌍",
-            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/NvCSr7qzAAM?autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
-        },
-        "MILENIO": {
-            "nombre": "MILENIO 🌍",
-            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UCFxHplbcoJK9m70c4VyTIxg&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
-        },
-        "abc-news": {
-            "nombre": "ABC News 🌍",
-            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UCBi2mrWuNuyYy4gbM6fU18Q&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
-        },
-        "sky-news": {
-            "nombre": "Sky News 🌍",
-            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UCoMdktPbSTixAyNGwb-UYkQ&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
-        },
-        "chilledCow": {
-            "nombre": "ChilledCow 🎵",
-            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/hHW1oY26kxQ?autoplay=1&mute=0&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         }
     },
     add: function(canal){
