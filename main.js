@@ -2,27 +2,34 @@ var size = 4;
 var sizeMobile = 12;
 var App = {
     channels: {
-       'venticuatro': {
-            'nombre': '24 horas <img src="https://github.com/Alplox/tele/raw/master/icons/chile.png"></img>', 
-            'code': '<div class="embed-responsive embed-responsive-16by9"><iframe src="https://invidio.us/embed/live_stream?channel=UCTXNz3gjAypWp3EhlIATEJQ&autoplay=1&volume=0&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+       "veinticuatro-play": {
+            "nombre": "24 Horas Play 📺",
+            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UCTXNz3gjAypWp3EhlIATEJQ&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         },
-        'meganoticias': {
-            'nombre': 'Meganoticias <img src="https://github.com/Alplox/tele/raw/master/icons/chile.png"></img>',
-            'code': '<div class="embed-responsive embed-responsive-16by9"><iframe src="https://invidio.us/embed/live_stream?channel=UCkccyEbqhhM3uKOI6Shm-4Q&autoplay=1&volume=0&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+        "meganoticias": {
+            "nombre": "Meganoticias 📺",
+            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UCkccyEbqhhM3uKOI6Shm-4Q&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         },
-        'cima': {
-            'nombre': 'Galeria CIMA <img src="https://github.com/Alplox/tele/raw/master/icons/chile.png"></img>', 
-            'code': '<div class="embed-responsive embed-responsive-16by9"><iframe src="https://invidio.us/embed/live_stream?channel=UC4GOcOKkEefz5NamN4WyMFg&autoplay=1&volume=0&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+        "cima": {
+            "nombre": "Galeria CIMA (Plaza Italia) 📺",
+            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UC4GOcOKkEefz5NamN4WyMFg&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         },
-        't13': {
-            'nombre': 'T13 <img src="https://github.com/Alplox/tele/raw/master/icons/chile.png"></img>', 
-            'code': '<div class="embed-responsive embed-responsive-16by9"><iframe src="https://invidio.us/embed/live_stream?channel=UCsRnhjcUCR78Q3Ud6OXCTNg&autoplay=1&volume=0&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+        "t13-movil": {
+            "nombre": "T13 MOVIL 📺",
+            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UCsRnhjcUCR78Q3Ud6OXCTNg&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         },
-        'cnn-cl': {
-            'nombre': 'CNN Chile <img src="https://github.com/Alplox/tele/raw/master/icons/chile.png"></img>',
-            'code':'<div class="embed-responsive embed-responsive-16by9"><iframe src="https://invidio.us/embed/live_stream?channel=UCpOAcjJNAp0Y0fhznRrXIJQ&autoplay=1&volume=0&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+        "left-voice":{
+            "nombre": "Left Voice (Plaza Italia 2) 📺",
+            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/nNiVnY2VWCA?autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         },
-
+        "cnn-cl": {
+            "nombre": "CNN Chile 📺",
+            "code":"<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UCpOAcjJNAp0Y0fhznRrXIJQ&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
+        },
+        "tv-senado": {
+            "nombre": "TV Senado 📺",
+            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://janus-tv.senado.cl/embed.php' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
+        },
         "cooperativa": {
             "nombre": "Cooperativa 📻",
             "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://rudo.video/live/coopetv?volume=0&mute=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
@@ -47,7 +54,7 @@ var App = {
             "nombre": "Universo 📻",
             "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://rudo.video/live/universotv?volume=0&mute=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         },
- "radio-ae": {
+        "radio-ae": {
             "nombre": "AE (DUOC) 📻",
             "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://live.grupoz.cl/3991add90400a25a1580f290246f90eb?volume=0&mute=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         },
@@ -118,11 +125,15 @@ var App = {
         "chilledCow": {
             "nombre": "ChilledCow 🎵",
             "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/hHW1oY26kxQ?autoplay=1&mute=0&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
+        },
+        "cam-dipu-13-yutu": {
+            "nombre": "Cámara Diputados Señal Youtube",
+            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UC33MG3YdoQ16a8a3wODh6lw&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         }
     },
     add: function(canal){
         if( App.channels[canal] ){
-            let thisCanal = document.createElement('div');
+            var thisCanal = document.createElement("div");
             thisCanal.innerHTML = App.channels[canal].code;
 
             if (App.isMobile()) {
@@ -131,22 +142,22 @@ var App = {
               thisCanal.classList.add("col-"+size);
             }
             thisCanal.classList.add("stream");
-            thisCanal.setAttribute('data-canal', canal);
-            var losCanales = document.getElementById('los-canales');
+            thisCanal.setAttribute("data-canal", canal);
+            var losCanales = document.getElementById("los-canales");
             losCanales.appendChild(thisCanal);
-            let n = document.querySelector('button[data-canal="'+ canal +'"]');
-            n.classList.remove('btn-outline-secondary');
-            n.classList.add('btn-primary');
+            var n = document.querySelector('button[data-canal="'+ canal +'"]');
+            n.classList.remove("btn-outline-secondary");
+            n.classList.add("btn-primary");
         }
     },
     remove: function(canal){
-      let findCanal = document.querySelector('div[data-canal="'+ canal +'"]');
-      var losCanales = document.getElementById('los-canales');
+      var findCanal = document.querySelector('div[data-canal="'+ canal +'"]');
+      var losCanales = document.getElementById("los-canales");
       if(findCanal != null){
-          losCanales.removeChild(findCanal)
-          let n = document.querySelector('button[data-canal="'+ canal +'"]');
-          n.classList.remove('btn-primary');
-          n.classList.add('btn-outline-secondary');
+          losCanales.removeChild(findCanal);
+          var n = document.querySelector('button[data-canal="'+ canal +'"]');
+          n.classList.remove("btn-primary");
+          n.classList.add("btn-outline-secondary");
         }
     },
     isMobile: function(){
@@ -157,17 +168,17 @@ var App = {
         seedModal: function(){
             for(const llave in App.channels) {
                 let buttonTV;
-                buttonTV = document.createElement('button');
-                buttonTV.classList.add('btn');
-                buttonTV.classList.add('btn-outline-secondary');
-                buttonTV.setAttribute('data-canal', llave);
+                buttonTV = document.createElement("button");
+                buttonTV.classList.add("btn");
+                buttonTV.classList.add("btn-outline-secondary");
+                buttonTV.setAttribute("data-canal", llave);
                 buttonTV.innerHTML = App.channels[llave].nombre;
-                let n = document.querySelector('.modal-body');
+                let n = document.querySelector(".modal-body");
                 n.appendChild(buttonTV);
                 buttonTV.addEventListener("click", function(){
-                    if(buttonTV.getAttribute('class').includes('btn-outline-secondary')){
+                    if(buttonTV.getAttribute("class").includes("btn-outline-secondary")){
                       App.add(llave);
-                    } else if(buttonTV.getAttribute('class').includes('btn-primary')){
+                    } else if(buttonTV.getAttribute("class").includes("btn-primary")){
                       App.remove(llave);
                     }
                 })
@@ -176,14 +187,14 @@ var App = {
     init: function(){
         App.seedModal();
 
-		//canales default
-        //App.add('t13-movil');
-        //App.add('cnn-cl');
+        App.add("t13-movil");
+        App.add("cnn-cl");
 
         if (!App.isMobile()) {
-            App.add('venticuatro');
-            App.add('cima');
-            //App.add('meganoticias');
+            App.add("veinticuatro-play");
+            App.add("cima");
+            App.add("meganoticias");
+            App.add("cooperativa");
         }
     }
 };
@@ -196,9 +207,9 @@ function updateClock() {
     utctime = now.toUTCString().slice(17, 25);
     var santiago = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDay(), now.getUTCHours()-3, now.getUTCMinutes(), now.getUTCSeconds());
     santiagotime = santiago.toTimeString().slice(0,8);
-    document.getElementById('time').innerHTML = localtime;
-    document.getElementById('UTCtime').innerHTML = utctime;
-    document.getElementById('santiagotime').innerHTML = santiagotime;
+    document.getElementById("time").innerHTML = localtime;
+    document.getElementById("UTCtime").innerHTML = utctime;
+    document.getElementById("santiagotime").innerHTML = santiagotime;
     setTimeout(updateClock, 1000);
 }
 
@@ -232,10 +243,10 @@ var hue = document.getElementById("FormControlSelect1");
 hue.onchange = function(event) {
     size = event.target.value
     sizeMobile = event.target.value
-    let canal2 = document.querySelectorAll('.stream');
+    let canal2 = document.querySelectorAll(".stream");
     for(let videos of canal2){
-        videos.classList.remove('col-12', 'col-6', 'col-4', 'col-3', 'col-2');
-        videos.classList.add('col-' + event.target.value);
+        videos.classList.remove("col-12", "col-6", "col-4", "col-3", "col-2");
+        videos.classList.add("col-" + event.target.value);
         console.log(videos)
     }
 }
