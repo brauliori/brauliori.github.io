@@ -2,17 +2,17 @@ var size = 4;
 var sizeMobile = 12;
 var App = {
     channels: {
-       "veinticuatro-play": {
+        "cima": {
+            "nombre": "Galeria CIMA (Plaza Italia) 📺",
+            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UC4GOcOKkEefz5NamN4WyMFg&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
+        },
+        "veinticuatro-play": {
             "nombre": "24 Horas Play 📺",
             "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UCTXNz3gjAypWp3EhlIATEJQ&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         },
         "meganoticias": {
             "nombre": "Meganoticias 📺",
             "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UCkccyEbqhhM3uKOI6Shm-4Q&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
-        },
-        "cima": {
-            "nombre": "Galeria CIMA (Plaza Italia) 📺",
-            "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://www.youtube.com/embed/live_stream?channel=UC4GOcOKkEefz5NamN4WyMFg&autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         },
         "t13-movil": {
             "nombre": "T13 MOVIL 📺",
