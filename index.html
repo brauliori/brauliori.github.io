@@ -1,157 +1,72 @@
 <!doctype html>
 <html lang="es">
-<head>  
-     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-	
-	<!-- para reproducir m3u8 con el edge-->
-	<script src="https://raw.githubusercontent.com/videojs/http-streaming/master/src/videojs-http-streaming.js"> </script>
-	
-            <script>
-            var player = videojs('hls-example');
-            player.play();
-            </script>
-	
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--Version sin tracking de youtube, es un poco más lenta eso si y tambien limitada en canales.-->
 
-	
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-	
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-      <title>Canales TV</title>
-      <link rel="stylesheet" href="https://brauliori.github.io/css/style.css">
-      <script src="https://kit.fontawesome.com/73ed46969f.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <link rel="stylesheet" href="style.css">
+    <title>Canales TV - no tracking</title>
 </head>
+
 
 <body>
 
-	
-                        <!--popover creditos-->
-                         <script>
-                        $(document).ready(function(){
-                            $('[data-toggle="popover"]').popover();   
-                        });
-                        $('.popover-dismiss').popover({
-                        trigger: 'focus'
-                        })
-                        $("[data-toggle=popover]")
-                        .popover({html:true})
-                        </script>
-                        <!---->
-      <div class="row no-gutters" id="los-canales">
-            <div class="col-4 col-md-4 col-lg-4 offset-md-4" id="reloj-control">
-                  <div class="container">
-                        <div class="row">
-                              <div class="col-12 align-center"
-                                    style="padding-top:2em; padding-bottom:1em;text-align: center;">
-                                    <span id="Santiago_z179" style="color:goldenrod;background:#000000;"
-                                          class="reloj"></span>
-                                    <p>Tiempo Santiago de Chile</p>
-				    <img class="rec" src="https://github.com/brauliori/brauliori.github.io/raw/master/icons/rojo.png"> = Se puede retroceder.
-                              </div>
-                              <div class="col-12 align-center d-none"
-                                    style="padding-bottom:1em;text-align: center; ">
-                                    <span id="UTC_za00" style="color:green;background:#000000;"
-                                          class="reloj"></span>
-                                    <p>UTC</p>
-                              </div>   
-                         <div class="col-12" style="text-align: center;">
-                                <a href="https://time.is/Santiago" id="time_is_link" rel="nofollow" target="_blank"
-                                style="font-size: 12px;color:#ffffff;background:#000000"></a>
-                                
-                                          <p style="color: white; text-align: center; font-size: 12px; padding: 1em 0 0 0;">
-
-                                
-                                
-						   <br>
-				<a style="font-size: 12px;color:#ffffff;background:#000000"
-                        href="https://brauliori.github.io/Variaciones/alternativa1/1">Versión 2 </a>&mdash; <a style="font-size: 12px;color:#ffffff;background:#000000"
-                        href="https://brauliori.github.io/Variaciones/alternativa2/2">Versión 3 (No Youtube Tracking) </a>
-						  <br>
-                         
-                     
-                                      
-						   <!-- Compilación Videos -->
-                                                      <div class="modal fade" id="canales-origen" tabindex="-1" role="dialog" aria-labelledby="canales-origenLabel" aria-hidden="true">
-                                                        <div class="modal-dialog" role="document">
-                                                          <div class="modal-content">
-                                                            <div class="modal-header">
-                                                              <h5 class="modal-title" id="canales-origenLabel">Compilaciones de videos entorno a las protestas desarrolladas en Chile este 2019:</h5>
-                                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                              </button>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align:left;">
-                                                                - <strong><a href="https://archivopublico.smvi.co/" target="_blank" class="tooltip-test" title="por u/dorinacho" style="color:#000000">Archivo publico de videos</a></strong> por <a href="https://old.reddit.com/user/dorinacho" target="_blank" style="color:#000000">u/dorinacho</a>
-                                                                <br>
-                                                                - <strong><a href="https://drive.google.com/drive/folders/1xO5rwXFK1gOTuEzDf4wdtJFvyVqSqEXL" target="_blank" class="tooltip-test" title="por u/beatripit" style="color:#000000">Compilación en Google Drive</a></strong> por <a href="https://old.reddit.com/user/beatripit/" target="_blank" style="color:#000000">u/beatripit</a> - <a href="http://mgnet.me/dRVn4G6" target="_blank" class="tooltip-test" title="Torrent" style="color:#000000">Mirror</a>
-                                                                <br>
-                                                                - <strong><a href="https://mega.nz/#F!lxon3KbL!NhlrKdgexf6jY36k6ndcaQ" target="_blank" class="tooltip-test" title="por u/ozzraven" style="color:#000000">Compilación en Mega.nz</a></strong> por <a href="https://old.reddit.com/user/ozzraven" target="_blank" style="color:#000000">u/ozzraven</a>
-                                                                <br>
-                                                                - <strong><a href="https://old.reddit.com/r/chile/comments/dko63j/thread_de_videos_manifestaciones_octubre_2019/" target="_blank" class="tooltip-test" title="por Varios" style="color:#000000">Compilación Usuarios Reddit</a></strong>
-                                                                <br>
-                                                                - <strong><a href="https://www.dropbox.com/sh/90int9i5w5pqkig/AAA-3nBgN5qEkU2BgRKtOGS-a?dl=0" target="_blank" class="tooltip-test" title="por @el_gamer_qlo" style="color:#000000">Compilación en Dropbox</a></strong> por <a href="https://twitter.com/el_gamer_qlo/" target="_blank" style="color:#000000">@el_gamer_qlo</a>
-                                                                <br>
-                                                                - <strong><a href="https://t.me/s/archivandochile" target="_blank" class="tooltip-test" title="por @archivandochile" style="color:#000000">Compilación mediante Telegram</a></strong> por <a href="https://twitter.com/archivandochile" target="_blank" style="color:#000000">@archivandochile</a>
-                                                            </div>
-                                                            <div class="modal-footer" id="canales-origen">
-							      <button type="button" class="btn btn-outline-info" role="button"><a href="https://forms.gle/uePCSougjByLagiu7" target="_blank" style="color:inherit">Compartir más videos</a></button>
-                                                              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                              </div>
-                        </div>
-                  </div>
+    <div class="container-fluid">
+        <div class="row hora">
+            <div class="col-sm-1">
+                <div class="numeros" id="time"></div>
+                <p style="color: white; text-align: center; font-size: 10px">Hora local</p>
             </div>
-      </div>
-
-	<!-- Canales -->
-      <div class="others">
-            <div class="boton-modal">
-                  <span class="fas fa-plus-circle"  data-toggle="modal" data-target="#modal-selecta"></span>
+            <div class="col-sm-1">
+                <div class="numeros" id="UTCtime"></div>
+                <p style="color: white; text-align: center; font-size: 10px">UTC</p>
             </div>
-            <div class="modal fade" id="modal-selecta" tabindex="1" role="dialog" aria-labelledby="modal-selecta-title"
-                  aria-hidden="true">
-                  <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                              <div class="modal-header">
-                                          
-                                    <h5 class="modal-title" id="modal-selecta-title">Selecciona tus canales</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">&times;</span>
-                                    </button>
-                              </div>
-                              <div class="modal-body" style="text-align:center;">
- 
-                              </div>
-                        <div><img src="https://github.com/brauliori/brauliori.github.io/raw/master/icons/edge.png"> = Se ve solo con el navegador EDGE 😕</div>
-                              <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-                              </div>
-                        </div>
-                  </div>
+            <div class="col-sm-1">
+                <div class="numeros" id="santiagotime"></div>
+                <p style="color: white; text-align: center; font-size: 10px">Hora Santiago de Chile</p>
             </div>
-      </div>
+            <div class="col-sm-3">
+                <div class="form-group col-6">
+                    <select class="form-control form-control-sm" id="FormControlSelect1">
+                        <option value="12">1</option>
+                        <option value="6">2</option>
+                        <option value="4" selected>3</option>
+                        <option value="3">4</option>
+                        <option value="2">6</option>
+                    </select>
+                </div>
+                <div class="boton-modal col-6">
+                    <label for="custom-btn" style="font-size: 12px">Canales</label>
+                    <button class="btn btn-light" id="custom-btn">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters row-canales" id="los-canales">
+        </div>
+    </div>
+    <div class="others">
+        <div class="modal" id="custom-modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Selecciona tus canales</h5>
+                        <button type="button" class="close" id="custom-close">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="text-align:center;"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="custom-close2">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js" integrity="sha256-VeNaFBVDhoX3H+gJ37DpT/nTuZTdjYro9yBruHjVmoQ=" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-      
-      <script src="//widget.time.is/es.js"></script>
-      <script src="https://brauliori.github.io/canales.js"></script>
+    <script src="canales.js"></script>
 </body>
+
 </html>
