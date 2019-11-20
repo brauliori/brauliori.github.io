@@ -48,6 +48,26 @@ var App = {
             "nombre": "Universo 📻",
             "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://rudo.video/live/universotv?volume=0&mute=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
         },
+        'cam-dipu-m3u-1': {
+            'nombre': 'Cámara Diputados 📺',
+            'code': '<div class="embed-responsive embed-responsive-16by9"><iframe scrolling="no" src="m3u/camara-diputados1.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+        },
+        'tv-senado': {
+            'nombre': 'TV Senado 📺',
+            'code': '<div class="embed-responsive embed-responsive-16by9"><iframe src="https://janus-tv.senado.cl/embed.php" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+        },
+        'cam-dipu-m3u-2': {
+            'nombre': 'Cámara Diputados 2 📺',
+            'code': '<div class="embed-responsive embed-responsive-16by9"><iframe scrolling="no" src="m3u/camara-diputados2.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+        },
+        'cam-dipu-m3u-3': {
+            'nombre': 'Cámara Diputados 3 📺',
+            'code': '<div class="embed-responsive embed-responsive-16by9"><iframe scrolling="no" src="m3u/camara-diputados3.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+        },
+        'chv-m3u-1': {
+            'nombre': 'CHV 📺',
+            'code': '<div class="embed-responsive embed-responsive-16by9"><iframe scrolling="no" src="m3u/chv1.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+        },        
         "radio-ae": {
             "nombre": "AE (DUOC) 📻",
             "code": "<div class='embed-responsive embed-responsive-16by9'><iframe src='https://live.grupoz.cl/3991add90400a25a1580f290246f90eb?volume=0&mute=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
