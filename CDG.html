@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="es"><head>
+	
+	<form name="comparacion">
+   <input type="hidden" name="difcpkm">
+
+
+    <table width="400" align="center" border="0" bordercolor="#969696" align="center">
+        <tr>
+            <td>Datos</td>
+            <td align="center">Diesel</td>
+            <td align="center">Gasolina</td>
+        </tr>
+        <tr>
+            <td align="left">
+                Precio del auto
+            </td>
+            <td align="center">
+                <input type="text" name="precioa" size="6">
+            </td>
+            <td align="center">
+                <input type="text" name="preciob" size="6">
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                Consumo cada 100 km
+            </td>
+            <td align="center">
+                <input type="text" name="consumoa" size="6">
+            </td>
+            <td align="center">
+                <input type="text" name="consumob" size="6">
+            </td>
+        </tr>
+        <tr>
+            <td align="left">Precio del combustible
+            </td>
+            <td align="center">
+                <input type="text" name="preciocomba" size="6">
+            </td>
+            <td align="center">
+                <input type="text" name="preciocombb" size="6">
+            </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                Años a tener
+            </td>
+
+            <td align="center">
+                <input type="text" name="tiempo" size="6">
+            </td>
+            <td align="center">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="7" class="textoazul" align="left"></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="7">
+                <input type="button" value="Calcular" onclick="calcular(this.form)">
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                Diferencia compra y de venta:
+            </td>
+            <td colspan="2">
+                <input type="text" name="difcompra" size="6" readonly>
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                minimo de km <strong>anuales</strong>:
+            </td>
+            <td colspan="2">
+                <input type="text" name="result2" size="6" readonly>
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                minimo de km <strong>totales</strong>:
+            </td>
+            <td colspan="2">
+                <input type="text" name="result3" size="6" readonly>
+            </td>
+        </tr>
+    </table>
+</form>
+                        	
+                        	
+<script type="text/javascript">
+
+
+        function calcular(obj){
+            if(obj.preciob.value==""){
+                preciob=0}
+            else{
+                preciob=parseFloat(obj.preciob.value);
+            }
+            if(obj.precioa.value==""){
+                precioa=0}
+            else{
+                precioa=parseFloat(obj.precioa.value)
+            }
+            if(obj.tiempo.value==""){
+                tiempo=0
+            }
+            else{
+                tiempo=parseFloat(obj.tiempo.value)
+            }
+           
+            if(obj.consumoa.value==""){
+                consumoa=0}
+            else{
+                consumoa=parseFloat(obj.consumoa.value)
+            }
+            if(obj.consumob.value==""){
+                consumob=0}
+            else{
+                consumob=parseFloat(obj.consumob.value)
+            }
+            if(obj.preciocomba.value==""){
+                preciocomba=0}
+            else{
+                preciocomba=parseFloat(obj.preciocomba.value)
+            }
+            if(obj.preciocombb.value==""){
+                preciocombb=0}
+            else{
+                preciocombb=parseFloat(obj.preciocombb.value)
+            }
+            coste1=preciocombb*consumob/100
+            coste2=preciocomba*consumoa/100
+            difcpkm=coste1-coste2
+            obj.difcpkm.value=formatear(difcpkm)
+            res=precioa-preciob
+            obj.difcompra.value=formatear(res)
+ 
+ 
+            result3=(precioa-preciob)/difcpkm
+            obj.result3.value=Math.round(result3)
+            obj.result2.value=""
+            
+            if(tiempo==0){
+            	obj.result2.value=""
+            }else{
+               result2=result3/tiempo;
+            	 result2=Math.round(result2)
+               obj.result2.value=result2
+            }    
+
+            return false
+        }
+        
+        function formatear(num){
+            num=10000*num
+            num=Math.round(num)
+            num=num/10000
+            return num;
+        }
+
+    </script>
+    
+    </body></html>
